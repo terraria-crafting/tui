@@ -1,6 +1,24 @@
 # Terraria Crafting UI: share all the data! 🦄
 
+> WIP: Nothing stable yet.
+
 ## Quick Start
+
+### Generate data
+
+Install `tdb`:
+
+```sh
+go get -u github.com/terraria-crafting/tdb
+```
+
+For more info see: [https://github.com/terraria-crafting/tdb](https://github.com/terraria-crafting/tdb)
+
+Gather Data:
+
+```sh
+cd src/assets/ && tdb
+```
 
 ```sh
 npm install
