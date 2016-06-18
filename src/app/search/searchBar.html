@@ -1,4 +1,11 @@
 <div class="search-bar">
-    <input id="search" type="text" placeholder="e.g.: wood, Drill Containment Unit" />
-    <input id="lucky" type="button" value="I'm Feeling Lucky" ng-click="$ctrl.lucky()"/>
+    <angucomplete-alt
+              placeholder="Search for craftable items"
+              pause="100"
+              selected-object="$ctrl.selectedItem"
+              local-data="$ctrl.data"
+              search-fields="label"
+              title-field="label"
+              minlength="1" />
+    <!-- <input id="lucky" type="button" value="I'm Feeling Lucky" ng-click="$ctrl.lucky()"/> -->
 </div>

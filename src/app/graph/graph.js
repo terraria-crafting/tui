@@ -1,6 +1,6 @@
 class GraphController {
-    /** @ngInject */
     constructor($log) {
+        'ngInject';
         this.$log = $log;
 
         $log.debug('GraphController CTOR');

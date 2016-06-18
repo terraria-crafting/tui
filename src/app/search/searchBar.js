@@ -1,11 +1,16 @@
 class SearchController {
-    /** @ngInject */
-    constructor($log) {
+    constructor($log, dbService) {
+        'ngInject';
         this.$log = $log;
+        this.dbService = dbService;
 
-        $log.debug('SearchController CTOR');
+        this.dbService.getData().then(resp => {
+            this.data = resp.data.items;
+        }, resp => {
+            this.$log.error(`Failed to load data: ${resp}`);
+        });
 
-        this.foo = 'Foo Bar';
+        this.selectedItem = null;
     }
 
     lucky() {

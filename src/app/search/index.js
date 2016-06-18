@@ -7,4 +7,3 @@ export const searchModule = 'search';
 angular
     .module(searchModule, [])
     .component('tcSearch', searchBar);
-    // .component('tcTechs', techs);
